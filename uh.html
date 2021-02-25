@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0” />
+    <title> </title>
+  <style>
+
+body {
+margin: 0;
+font-family: sans-serif;
+}
+  .menu {
+  width: 400px;
+  height: 250px;
+  background-color: red;
+  overflow: hidden;
+  transition: width 0.3s, height 0.3s, background-colour 0.3s;
+  }
+
+  .menu div {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .out {
+    background-color: rgb(191, 246, 214);
+    width: 70vh;
+    height: 100vh;
+  }
+
+  .out div{
+    opacity: 1;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    pointer-events: all;
+  }
+
+  /*
+  .menu {
+  background-color: rgb(191, 246, 214)
+  width: 70vh;
+  height: 100vh;
+  }
+
+  /*.menu div {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  }
+*/
+
+  </style>
+  </head>
+
+<body>
+ <nav class="menu">
+   <div> <img src="obitos-near-death.jpg" width="250" height="150"/> </div>
+   <div> <p> This is obito, he's the reason the anime was basically created because the girl he simped for died and he started a war using a rogue gang as his puppets by manipulating the leader into following his orders to create a world of (through his eyes) "True Peace".
+   <p> Nickname: Simpbito </p>
+   </div>
+</nav>
+
+<script>
+toggleAnimation = (evt) => {
+  evt.target.classList.toggle("out");
+};
+document
+.querySelector(".menu")
+.addEventListener("click", toggleAnimation);
+  </script>
+ </body>
+</html>

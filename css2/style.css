@@ -1,0 +1,25 @@
+.menu {
+width: 400px;
+height: 250px;
+background-color: red;
+overflow: hidden;
+transition: width 0.3s, height 0.3s, background-colour 0.3s;
+}
+
+.menu div {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.out {
+  background-color: rgb(191, 246, 214);
+  width: 70vh;
+  height: 100vh;
+}
+
+.out div{
+  opacity: 1;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  pointer-events: all;
+}
